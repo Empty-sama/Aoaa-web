@@ -1,13 +1,13 @@
 {
-  "name": "directory-api",
+  "name": "Aoaa-web",
   "version": "1.0.0",
-  "description": "just a simple api which use local directory",
-  "main": "index.js",
+  "description": "A website built and hosted by miguel",
+  "main": "app.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node app.js"
   },
-  "keywords": ["directory-api","simple-api", "localhost"],
-  "author": "Alι_Aryαɴ",
+  "keywords": ["website","miguel","Aoaa"],
+  "author": "Miguel",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
