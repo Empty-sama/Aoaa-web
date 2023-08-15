@@ -1,12 +1,11 @@
 const http = require('http');
 const url = require('url');
 const fs = require('fs');
-
 function req(request,response){
     const base = url.parse(request.url);
     const pathname = base.pathname;
     const fileName = '.' + pathname;
-    const mainFile = fs.readFileSync("main")
+    const mainFile = fs.readFileSync("main.html")
     console.log(fileName);
     fs.readFile(fileName,function(err,data){
     if(err){

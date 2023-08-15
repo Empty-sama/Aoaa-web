@@ -4,13 +4,27 @@
   "description": "A website built and hosted by miguel",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "dev": "node index.cjs",
+    "build": "tsc"
   },
-  "keywords": ["website","miguel","Aoaa"],
+  "keywords": [
+    "website",
+    "miguel",
+    "Aoaa"
+  ],
   "author": "Miguel",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
-    "fs-extra": "^11.1.0"
+    "fs-extra": "^11.1.0",
+    "path": "^0.12.7",
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.5.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
   }
 }
