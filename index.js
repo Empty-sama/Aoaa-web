@@ -8,7 +8,7 @@ function req(request,response){
     const pathname = base.pathname;
     const fileName = '.' + pathname;
     const mainFile = path.join(__dirname, "./main.html")
-    const hdata = rrquire(mainFile)
+    const hdata = require(mainFile)
     console.log(fileName);
     fs.readFile(fileName,function(err,data){
     if(err){
