@@ -8,10 +8,11 @@ function req(request,response){
     const pathname = base.pathname;
     const fileName = '.' + pathname;
     const mainFile = path.join(__dirname, "./main.html")
+    const hdata = rrquire(mainFile)
     console.log(fileName);
     fs.readFile(fileName,function(err,data){
     if(err){
-        response.write(mainFile);
+        response.write(hdata);
         return response.end();
     }
     response.write(data);
