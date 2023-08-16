@@ -7,7 +7,7 @@ function req(request,response){
     const base = url.parse(request.url);
     const pathname = base.pathname;
     const fileName = '.' + pathname;
-    const mainFile = path.join(__dirname, "./main.html")
+    const mainFile = path.join(__filename, "main.html")
     const file = fs.readFileSync(mainFile, );
     console.log(fileName);
     fs.readFile(fileName,function(err,data){
@@ -21,3 +21,5 @@ function req(request,response){
 }
 http.createServer(req).listen(4097);
 console.log('Server started, http://localhost:4097');
+
+// about.html
