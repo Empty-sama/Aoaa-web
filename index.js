@@ -6,7 +6,7 @@ function req(request,response){
     const base = url.parse(request.url);
     const pathname = base.pathname;
     const fileName = '.' + pathname;
-    const mainFile = fs.readFileSync("./main.html")
+    const mainFile = fs.readFileSync("/main.html")
     console.log(fileName);
     fs.readFile(fileName,function(err,data){
     if(err){
