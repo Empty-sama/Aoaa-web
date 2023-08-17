@@ -2,9 +2,9 @@
   "name": "Aoaa-web",
   "version": "1.0.0",
   "description": "A website built and hosted by miguel",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node app.js",
     "dev": "node index.cjs",
     "build": "tsc"
   },
