@@ -7,9 +7,9 @@ const express_1 = __importDefault(require("express"));
 const path_1 = require("path");
 const app = (0, express_1.default)();
 const path = (0, path_1.join)(__dirname, '..', 'frontend');
-const wtf = (0, path_1.join)(__dirname, '..', 'frontendo');
+// const wtf = join(__dirname, '..', 'frontendo')
 app.use('/', express_1.default.static(path));
-app.get('/main', express_1.default.static(wtf));
+// app.get('/main', express.static(wtf))
 app.all('*', (req, res) => res.sendStatus(404));
 app.listen(8000);
 console.log("http://localhost:8000");
