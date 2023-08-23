@@ -4,9 +4,9 @@ const app = express()
 const path = join(__dirname, '..', 'frontend')
 const main = join(__dirname, '..', 'main')
 
-app.use('/', express.static(main))
+app.use('/', express.static(path))
 
-app.use('/main', express.static(main))
+app.get('/main', express.static(main))
 
 app.all('*', (req: Request, res: Response) => res.sendStatus(404))
 
