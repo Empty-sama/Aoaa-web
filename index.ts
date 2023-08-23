@@ -4,7 +4,7 @@ const app = express()
 const path = join(__dirname, '..', 'frontend')
 const main = join(__dirname, '..', 'main')
 
-app.use('/', express.static(path))
+app.use('/', express.static(main))
 
 app.use('/main', express.static(main))
 
