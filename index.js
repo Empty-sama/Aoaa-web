@@ -7,8 +7,8 @@ function req(request, response) {
     const base = url.parse(request.url);
     const pathname = base.pathname;
     const fileName = '.' + pathname;
-    const mainFile = path.join(__filename, "main.html")
-    const file = fs.readFileSync(mainFile,);
+    const mainFile = path.join(__dirname, "./main.html")
+    const file = fs.readFileSync(mainFile, "utf-8");
     console.log(fileName);
     fs.readFile(fileName, function (err, data) {
         if (err) {
