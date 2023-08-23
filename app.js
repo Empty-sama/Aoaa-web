@@ -7,6 +7,7 @@ const url = require('url');
 
 http.createServer((req, res) => {
     if(req.url === '/home' || req.url === '/') {
-        fs.createReadStream(path.join(__dirname, './main.html')).pipe(res);
+        fs.createReadStream(path.join('./main.html')).pipe(res);
     }
 }).listen(8080);
+console.log('http://localhost:8080');
