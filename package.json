@@ -4,7 +4,7 @@
   "description": "A website built and hosted by miguel",
   "main": "app.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node dist/index.js",
     "dev": "node index.cjs",
     "build": "tsc"
   },
