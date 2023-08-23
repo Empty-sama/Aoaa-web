@@ -1,12 +1,12 @@
 import express, { Request, Response } from 'express'
 import { join } from 'path'
 const app = express()
-const path = join(__dirname, '..', 'frontend')
-const main = join(__dirname, '..', 'main')
+// const path = join(__dirname, '..', 'frontend')
+const path = join(__dirname, '..', 'main')
 
 app.use('/', express.static(path))
 
-app.get('/main', express.static(main))
+app.get('/main', express.static(path))
 
 app.all('*', (req: Request, res: Response) => res.sendStatus(404))
 
