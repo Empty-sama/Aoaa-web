@@ -6,7 +6,7 @@ const about = join(__dirname, '..', 'about')
 
 app.use('/', express.static(path))
 
-app.get('/about', express.static(about))
+app.use('/about', express.static(about))
 
 app.all('*', (req: Request, res: Response) => res.sendStatus(404))
 
