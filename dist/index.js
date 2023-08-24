@@ -9,7 +9,7 @@ const app = (0, express_1.default)();
 const path = (0, path_1.join)(__dirname, '..', 'frontend');
 const about = (0, path_1.join)(__dirname, '..', 'about');
 app.use('/', express_1.default.static(path));
-app.get('/about', express_1.default.static(about));
+app.use('/about', express_1.default.static(about));
 app.all('*', (req, res) => res.sendStatus(404));
 app.listen(8000);
 console.log("http://localhost:8000");
